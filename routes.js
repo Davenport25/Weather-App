@@ -1,13 +1,13 @@
 
 
-const express = require('express');
-const axios = require('axios');
-const dotenv = require('dotenv');
-const knex = require('./database');
+express = require('express');
+axios = require('axios');
+dotenv = require('dotenv');
+knex = require('./database');
 
 dotenv.config();
-const router = express.Router();
-const API_KEY = process.env.OPENWEATHER_API_KEY;
+router = express.Router();
+API_KEY = process.env.OPENWEATHER_API_KEY;
 
 //  Fetch Weather Data
 router.get('/weather', async (req, res) => {
